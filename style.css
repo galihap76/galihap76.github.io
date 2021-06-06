@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.jumbotron{
+	padding-top:6rem;
+	background-color: #e2edff;
+}
+#projects{
+	background-color: #e2edff;
+}
+section{
+	padding-top:5rem;
+}
