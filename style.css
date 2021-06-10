@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+*{
+	scroll-behavior:smooth;
+}
+
+
 .jumbotron{
 	padding-top:6rem;
 	background-color: #e2edff;
