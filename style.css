@@ -8,10 +8,10 @@
 
 .jumbotron{
 	padding-top:6rem;
-	background-color: #e2edff;
+	background-color:gainsboro;
 }
 #projects{
-	background-color: #e2edff;
+	background-color: gainsboro;
 }
 section{
 	padding-top:5rem;
@@ -21,4 +21,10 @@ section{
 }
 #gallery .row > *{
 	padding:0;
+}
+footer{
+    background-color: #273036;
+}
+nav{
+    background-color: #273036;
 }
