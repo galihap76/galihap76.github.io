@@ -1,0 +1,180 @@
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+
+$font-primary: 'Poppins',Arial, sans-serif;
+$primary: #1089ff;
+
+body{
+	font-family: $font-primary;
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: normal;
+}
+a {
+	transition: .3s all ease;
+	color: $primary;
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none;
+	}
+}
+button {
+	transition: .3s all ease;
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.5;
+	font-weight: 400;
+	font-family: $font-primary;
+}
+
+
+.ftco-section{
+	padding: 7em 0;
+}
+
+.ftco-no-pt{
+	padding-top: 0;
+}
+.ftco-no-pb{
+	padding-bottom: 0;
+}
+//HEADING SECTION
+.heading-section{
+	font-size: 28px;
+}
+
+//COVER BG
+.img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+//OWL CAROUSEL
+.owl-carousel {
+	position: relative;
+	.owl-item {
+		opacity: 1;
+		&.active {
+			opacity: 1;
+		}
+	}
+	
+	.owl-nav {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+			transform: translateY(-50%);
+			margin-top: -60px;
+			color: rgba(0,0,0,.1) !important;
+			@include transition(.7s);
+			span {
+				&:before {
+					font-size: 30px;
+				}
+			}
+			opacity: 0;
+		}
+		.owl-prev {
+			left: 0;
+		}
+		.owl-next {
+			right: 0;
+		}
+	}
+	.owl-dots {
+		text-align: center;
+		margin-top: 20px;
+		.owl-dot {
+			width: 10px;
+			height: 10px;
+			margin: 5px;
+			border-radius: 50%;
+			background: rgba(0,0,0,.1);
+			position: relative;
+			&:hover, &:focus{
+				outline: none !important;
+			}
+			&.active {
+				background: $primary;
+			}
+		}
+	}
+	&:hover{
+		.owl-nav{
+			.owl-prev,
+			.owl-next{
+				opacity: 1;
+			}
+			.owl-prev {
+				left: -25px;
+			}
+			.owl-next {
+				right: -25px;
+			}
+		}
+	}
+} 
+
+.owl-carousel.owl-drag .owl-item {
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+}
+
+//WORK
+.work{
+	width: 100%;
+	.img{
+		width: 100%;
+		height: 300px;
+		position: relative;
+
+		-webkit-box-shadow: 0px 20px 35px -30px rgba(0,0,0,0.26);
+		-moz-box-shadow: 0px 20px 35px -30px rgba(0,0,0,0.26);
+		box-shadow: 0px 20px 35px -30px rgba(0,0,0,0.26);
+		.icon{
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			background: $white;
+			display: block;
+			opacity: 0;
+			@include transition(.3s);
+		}
+	}
+	.text{
+		h3{
+			font-size: 18px;
+			font-weight: 500;
+			a{
+				color: $black;
+			}
+		}
+		span{
+			font-size: 12px;
+			letter-spacing: 1px;
+			color: rgba(0,0,0,.3);
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+	}
+	&:hover{
+		.img{
+			.icon{
+				opacity: 1;
+			}
+		}
+	}
+}
