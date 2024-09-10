@@ -13,6 +13,15 @@
   transition: transform 0.2s;
 }
 
+.skill {
+  filter: grayscale(100%);
+}
+
+.skill:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+}
+
 .icons:hover {
   transform: scale(1.2);
 }

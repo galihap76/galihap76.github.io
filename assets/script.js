@@ -14,6 +14,8 @@ const scriptURL =
   "https://script.google.com/macros/s/AKfycbz_sB8gb_4w7mcsZ0SJSh18QXQyA0zSyf_Eei1jRSpHJwfrxlQtDhURqiTBXyPG3EFT/exec";
 const img_skillset = document.querySelectorAll(".img-skillset");
 const certificates = document.querySelectorAll(".certificates");
+const navLinks = document.querySelectorAll(".nav-link");
+const menuToggle = document.getElementById("navbarNav");
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load("particles-js", "assets/particles.json", function () {
@@ -58,6 +60,16 @@ gsap.from(".particles", { duration: 1, y: -100, opacity: 0 });
 VanillaTilt.init(document.querySelector(".img"), {
   max: 30,
   speed: 400,
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    // Jika menggunakan Bootstrap 5
+    const bsCollapse = new bootstrap.Collapse(menuToggle, {
+      toggle: false,
+    });
+    bsCollapse.hide(); // Tutup navbar
+  });
 });
 
 img_skillset.forEach((img, i) => {
