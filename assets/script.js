@@ -14,6 +14,7 @@ const scriptURL =
   "https://script.google.com/macros/s/AKfycbz_sB8gb_4w7mcsZ0SJSh18QXQyA0zSyf_Eei1jRSpHJwfrxlQtDhURqiTBXyPG3EFT/exec";
 const img_skillset = document.querySelectorAll(".img-skillset");
 const certificates = document.querySelectorAll(".certificates");
+const educations = document.querySelectorAll(".educations");
 const navLinks = document.querySelectorAll(".nav-link");
 const menuToggle = document.getElementById("navbarNav");
 
@@ -76,6 +77,12 @@ img_skillset.forEach((img, i) => {
   img.dataset.aos = "fade-down";
   img.dataset.aosDelay = i * 50;
   img.dataset.aosDuration = 1000;
+});
+
+educations.forEach((education, i) => {
+  education.dataset.aos = "fade-down";
+  education.dataset.aosDelay = i * 50;
+  education.dataset.aosDuration = 1000;
 });
 
 certificates.forEach((certificate, i) => {
