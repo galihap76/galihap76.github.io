@@ -25,7 +25,7 @@ particlesJS.load("particles-js", "assets/particles.json", function () {
 
 let owl = $(".owl-carousel");
 owl.owlCarousel({
-  items: 4,
+  items: 7,
   loop: true,
   margin: 10,
   autoplay: true,
