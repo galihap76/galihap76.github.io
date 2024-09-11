@@ -11,7 +11,7 @@ let hilangDelay = 100; // Delay menghilang dalam milidetik
 let currentIndex = 0;
 let karakterIndex = 0;
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbz_sB8gb_4w7mcsZ0SJSh18QXQyA0zSyf_Eei1jRSpHJwfrxlQtDhURqiTBXyPG3EFT/exec";
+  "https://script.google.com/macros/s/AKfycbz_sB8gb_4w7mcsZ0SJSh18QXQyA0zSyf_Eei1jRSpHJwfrxlQtDhURqiTBXyPG3EFT/exec"; // Silakan ganti milik Anda sendiri.
 const img_skillset = document.querySelectorAll(".img-skillset");
 const certificates = document.querySelectorAll(".certificates");
 const educations = document.querySelectorAll(".educations");
