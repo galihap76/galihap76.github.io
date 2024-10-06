@@ -47,6 +47,7 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="assets/style.css" />
 
     <!-- Google tag (gtag.js) -->
@@ -128,20 +129,26 @@
             <div class="d-flex justify-content-center align-items-center mb-3">
               <a
                 href="https://github.com/galihap76"
-                class="fs-2 text-white icons"
+                class="fs-2 me-4 text-white icons"
                 ><i class="bi bi-github"></i
               ></a>
 
               <a
                 href="https://www.facebook.com/galih.ap.357"
-                class="fs-2 me-4 mx-4 text-white icons"
+                class="fs-2 me-4 text-white icons"
                 ><i class="bi bi-facebook"></i>
               </a>
 
               <a
                 href="https://www.instagram.com/galihap.76/"
-                class="fs-2 text-white icons"
+                class="fs-2 me-4 text-white icons"
                 ><i class="bi bi-instagram"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/galih-anggoro-prasetya/"
+                class="fs-2 text-white icons"
+                ><i class="bi bi-linkedin"></i>
               </a>
             </div>
 
@@ -1140,6 +1147,30 @@
       crossorigin="anonymous"
     ></script>
 
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+            .register("sw.js")
+            .then((registration) => {
+              statusServiceWorker(
+                "Service worker registered with scope: " + registration.scope
+              );
+            })
+            .catch((error) => {
+              statusServiceWorker(
+                "Service worker registration failed: ",
+                error
+              );
+            });
+        }
+      });
+
+      function statusServiceWorker(message) {
+        console.log(message);
+      }
+    </script>
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -1153,6 +1184,7 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/particles.min.js"></script>
     <script src="assets/particles.js"></script>
     <script src="assets/vanilla-tilt.min.js"></script>
     <script src="assets/script.js"></script>
