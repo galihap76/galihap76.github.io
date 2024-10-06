@@ -6,6 +6,7 @@ const form = document.forms["galihap-contact-form"];
 const btnKirim = document.querySelector(".btn-kirim");
 const btnLoading = document.querySelector(".btn-loading");
 const myAlert = document.querySelector(".my-alert");
+const myAlert2 = document.querySelector(".my-alert2");
 let munculDelay = 80; // Delay muncul dalam milidetik
 let hilangDelay = 100; // Delay menghilang dalam milidetik
 let currentIndex = 0;
@@ -110,9 +111,23 @@ form.addEventListener("submit", (e) => {
       myAlert.classList.toggle("d-none");
 
       form.reset();
-      console.log("Success!", response);
+
+      setTimeout(function () {
+        myAlert.classList.toggle("d-none");
+      }, 3000);
     })
-    .catch((error) => console.error("Error!", error.message));
+    .catch((error) => {
+      myAlert2.classList.toggle("d-none");
+
+      setTimeout(function () {
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+      }, 100);
+
+      setTimeout(function () {
+        myAlert2.classList.toggle("d-none");
+      }, 3000);
+    });
 });
 
 window.addEventListener("scroll", function () {
