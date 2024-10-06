@@ -38,7 +38,6 @@ const urlsToCache = [
   "/assets/img/wireshark.webp",
   "/assets/particles.js",
   "/assets/particles.json",
-  "/assets/particles.min.js",
   "/assets/script.js",
   "/assets/style.css",
   "/assets/vanilla-tilt.min.js",
