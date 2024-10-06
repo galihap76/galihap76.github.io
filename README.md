@@ -10,7 +10,7 @@ Fitur bisa di lihat pada tag <a href="https://github.com/galihap76/galihap76.git
 
 ## Screenshot 📸
 
-![image](https://github.com/user-attachments/assets/a6b92fc7-63d4-403e-bdbe-2a35b31c7066)
+![image](https://github.com/user-attachments/assets/2c8f0a7b-dd6d-49d0-8574-a21f879c0739)
 
 ## Penutup
 
