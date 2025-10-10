@@ -1,7 +1,7 @@
 let arrow = document.querySelector(".arrow");
 let berjalan = document.querySelector("#berjalan");
 let nav = document.querySelector(".nav");
-let arr = ["Backend Development", "Penetration Testing"];
+let arr = ["Backend Dev", "Pentester"];
 const form = document.forms["galihap-contact-form"];
 const btnKirim = document.querySelector(".btn-kirim");
 const btnLoading = document.querySelector(".btn-loading");
@@ -16,6 +16,7 @@ const scriptURL =
 const img_skillset = document.querySelectorAll(".img-skillset");
 const certificates = document.querySelectorAll(".certificates");
 const educations = document.querySelectorAll(".educations");
+const experiences = document.querySelectorAll(".experiences");
 const navLinks = document.querySelectorAll(".nav-link");
 const menuToggle = document.getElementById("navbarNav");
 
@@ -24,13 +25,12 @@ particlesJS.load("particles-js", "assets/particles.json", function () {
   console.log("callback - particles.js config loaded");
 });
 
-let owl = $(".owl-carousel");
-owl.owlCarousel({
-  items: 7,
+let owl_carousel = $(".owl-carousel");
+owl_carousel.owlCarousel({
   loop: true,
   margin: 10,
   autoplay: true,
-  autoplayTimeout: 3000,
+  autoplayTimeout: 1500,
   autoplayHoverPause: true,
   responsiveClass: true,
   responsive: {
@@ -45,16 +45,16 @@ owl.owlCarousel({
     1000: {
       items: 3,
       nav: true,
-      loop: true,
     },
   },
 });
 
-$(".play").on("click", function () {
-  owl.trigger("play.owl.autoplay", [1000]);
+$(".bi-chevron-left").on("click", function () {
+  owl_carousel.trigger("prev.owl.carousel");
 });
-$(".stop").on("click", function () {
-  owl.trigger("stop.owl.autoplay");
+
+$(".bi-chevron-right").on("click", function () {
+  owl_carousel.trigger("next.owl.carousel");
 });
 
 gsap.from(".particles", { duration: 1, y: -100, opacity: 0 });
@@ -84,6 +84,12 @@ educations.forEach((education, i) => {
   education.dataset.aos = "fade-down";
   education.dataset.aosDelay = i * 50;
   education.dataset.aosDuration = 1000;
+});
+
+experiences.forEach((experience, i) => {
+  experience.dataset.aos = "fade-down";
+  experience.dataset.aosDelay = i * 50;
+  experience.dataset.aosDuration = 1000;
 });
 
 certificates.forEach((certificate, i) => {
