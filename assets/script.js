@@ -98,7 +98,9 @@ certificates.forEach((certificate, i) => {
   certificate.dataset.aosDuration = 1000;
 });
 
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
