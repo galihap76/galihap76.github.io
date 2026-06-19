@@ -1,13 +1,13 @@
 ## Website Portofolio 🚀
 
-Ini adalah website portofolio saya. Website ini menampilkan tentang saya dan juga menampilkan projek, sertifikat, dan bidang yang saya tekuni yaitu backend development dan penetration testing. Website ini sebenarnya banyak perubahan, namun saya resmikan pembuatan website portofolio ini sebagai versi yang stabil.
+Ini adalah website portofolio pribadi saya yang berisi informasi mengenai profil, pengalaman, proyek, sertifikat, serta teknologi yang saya gunakan. Fokus utama saya berada pada bidang **Backend Development** dan **Web Security (Penetration Testing)**.
 
-Saya banyak mengambil beberapa referensi website milik orang lain agar saya tahu bagaimana tampilan website yang saya buat ini. Website saya ini menggunakan HTML, Bootstrap, JavaScript. Ada juga saya menambahkan CSS sedikit dan juga beberapa library JavaScript. Untuk informasi kontak, saya menggunakan script JavaScript yang telah di tulis oleh orang lain pada <a href="https://github.com/jamiewilson/form-to-google-sheets">form to google sheets</a>.
+Website ini telah mengalami berbagai pengembangan dan penyempurnaan dari waktu ke waktu. Versi yang tersedia pada repositori ini merupakan rilis stabil yang saya gunakan sebagai portofolio utama.
 
-## Screenshot 📸
-
-<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/3a268a7b-37be-40fb-b017-583a33f6e8a2" />
+Untuk fitur formulir kontak, saya menggunakan implementasi JavaScript yang dikembangkan oleh <a href="https://github.com/jamiewilson/form-to-google-sheets">jamiewilson/form-to-google-sheets</a> sebagai media pengiriman pesan ke Google Sheets.
 
 ## Penutup
 
-Website portofolio saya ini akan terus saya perbarui jika memang saya ada waktu melakukan nya dan projek sampingan yang saya kerjakan. Terima kasih.
+Website portofolio ini akan terus saya kembangkan seiring bertambahnya pengalaman, proyek, dan kemampuan yang saya miliki. Saya juga akan melakukan pembaruan apabila terdapat peningkatan fitur, penyempurnaan tampilan, maupun perbaikan sistem.
+
+Terima kasih telah mengunjungi repositori ini. Semoga dapat memberikan gambaran mengenai pengalaman dan karya yang telah saya bangun.
