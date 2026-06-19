@@ -5,48 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portfolio Website Galih Anggoro Prasetya"
+      content="Portfolio website of Galih Anggoro Prasetya, a Backend Developer focused on scalable web applications and web security."
     />
     <meta name="author" content="Galih Anggoro Prasetya" />
     <meta name="robots" content="index, follow" />
     <meta
       name="keywords"
-      content="portfolio website galih anggoro prasetya, CV website, galih anggoro prasetya"
+      content="Galih Anggoro Prasetya, Backend Developer, Laravel Developer, Web Developer, Web Security, Penetration Testing"
     />
-
-    <!-- Open Graph untuk preview link -->
     <meta
       property="og:title"
-      content="Portfolio Website Galih Anggoro Prasetya"
+      content="Galih Anggoro Prasetya | Backend Developer"
     />
     <meta
       property="og:description"
-      content="Portfolio of Galih Anggoro Prasetya - showcasing backend development and penetration testing."
+      content="Backend developer portfolio focused on secure, scalable web applications."
     />
-
     <meta
       property="og:image"
       content="https://galihap76.github.io/assets/img/my-profile.webp"
     />
     <meta property="og:url" content="https://galihdev.my.id/" />
     <meta property="og:type" content="website" />
-
-    <!-- Untuk Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Portfolio Website Galih Anggoro Prasetya"
+      content="Galih Anggoro Prasetya | Backend Developer"
     />
     <meta
       name="twitter:description"
-      content="Portfolio of Galih Anggoro Prasetya - showcasing backend development and penetration testing."
+      content="Backend developer portfolio focused on secure, scalable web applications."
     />
     <meta
       name="twitter:image"
       content="https://galihap76.github.io/assets/img/my-profile.webp"
     />
 
-    <title>Galih Anggoro Prasetya | Portfolio Website</title>
+    <title>Galih Anggoro Prasetya | Backend Developer</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -57,34 +59,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
-      rel="stylesheet"
-    />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="assets/style.css" />
 
-    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-J8QRHL4LMN"
@@ -95,19 +86,17 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-J8QRHL4LMN");
     </script>
   </head>
 
   <body id="home">
     <nav
-      class="navbar fixed-top bg-dark navbar-expand-lg bg-body-tertiary nav shadow"
+      class="navbar navbar-expand-lg fixed-top site-nav"
+      aria-label="Primary navigation"
     >
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><i class="bi bi-github"></i> Galih Anggoro Prasetya</a
-        >
+        <a class="navbar-brand" href="#home">Galih Anggoro Prasetya</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -122,1141 +111,1083 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#about">
+                <i class="bi bi-person"></i>
+                <span>About</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#projects">
+                <i class="bi bi-kanban"></i>
+                <span>Projects</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#experience">
+                <i class="bi bi-briefcase"></i>
+                <span>Experience</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#certificates">
+                <i class="bi bi-award"></i>
+                <span>Certificates</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">
+                <i class="bi bi-send"></i>
+                <span>Contact</span>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div id="particles-js" class="mb-5 particles">
+    <header class="hero-section">
       <div class="container">
-        <div class="row justify-content-center align-self-center">
-          <div class="col z-0 position-absolute p-5 rounded-3">
-            <img
-              src="assets/img/my-profile.webp"
-              class="rounded-circle mx-auto d-block mb-3 img"
-              alt="profile"
-              style="width: 250px; height: 250px"
-            />
-            <h1 class="text-white text-center nama mb-4 acme-regular">
-              Galih Anggoro Prasetya
-            </h1>
-
-            <p class="text-white text-center bidang fs-4">
-              <span id="berjalan" class="acme-regular"></span>
-              <span id="cursor" class="blinking-cursor">|</span>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <p class="eyebrow reveal">Backend Developer</p>
+            <h1 class="hero-title reveal">Galih Anggoro Prasetya</h1>
+            <p class="hero-lead reveal">
+              I build reliable Laravel and backend-driven web applications with
+              a growing focus on secure architecture, API design, and web
+              security testing.
             </p>
-
-            <div class="d-flex justify-content-center align-items-center mb-3">
+            <div class="hero-actions reveal">
+              <a class="btn btn-primary" href="#projects">
+                <i class="bi bi-kanban"></i>
+                View Projects
+              </a>
+              <a class="btn btn-outline-light" href="#contact">
+                <i class="bi bi-send"></i>
+                Contact Me
+              </a>
               <a
+                class="btn btn-link-light"
                 href="https://github.com/galihap76"
-                class="fs-2 text-white icons"
-                ><i class="bi bi-github"></i
-              ></a>
-
-              <a
-                href="https://www.facebook.com/galih.ap.357"
-                class="fs-2 me-4 ms-4 text-white icons"
-                ><i class="bi bi-facebook"></i>
-              </a>
-
-              <a
-                href="https://www.instagram.com/galihap.76/"
-                class="fs-2 text-white icons"
-                ><i class="bi bi-instagram"></i>
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bi bi-github"></i>
+                GitHub
               </a>
             </div>
-
-            <p class="text-white fs-1 text-center">
-              <a href="#about"> <i class="bi bi-arrow-down-short arrow"></i></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section id="about" class="anchor-about">
-      <div class="container mb-5">
-        <div class="row mb-3">
-          <div class="col">
-            <h3
-              class="text-center acme-regular"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              About
-            </h3>
-          </div>
-        </div>
-
-        <div class="row">
-          <div
-            class="col-md-6 mx-auto"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-          >
-            <p>
-              Hello, I’m Galih Anggoro Prasetya, I live in Tegal, Indonesia. I
-              focus on backend development and penetration testing, with a
-              particular interest in red team offensive security, as I’m
-              passionate about the security aspects beyond just writing code. My
-              primary backend technology is Laravel. For penetration testing
-              activities, I utilize various automated and manual tools to
-              accelerate the process of vulnerability detection and
-              exploitation.
-            </p>
-
-            <p>
-              I believe that a strong system is not built solely with good code,
-              but also with a deep understanding of its potential
-              vulnerabilities. Therefore, I continuously develop my skills in
-              backend development and web application security to create
-              solutions that are secure, efficient, and scalable.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#dcdcdc"
-        fill-opacity="1"
-        d="M0,256L34.3,250.7C68.6,245,137,235,206,192C274.3,149,343,75,411,64C480,53,549,107,617,144C685.7,181,754,203,823,181.3C891.4,160,960,96,1029,96C1097.1,96,1166,160,1234,165.3C1302.9,171,1371,117,1406,90.7L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-      ></path>
-    </svg>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#dcdcdc"
-        fill-opacity="1"
-        d="M0,64L48,80C96,96,192,128,288,154.7C384,181,480,203,576,181.3C672,160,768,96,864,96C960,96,1056,160,1152,181.3C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-      ></path>
-    </svg>
-
-    <section id="education" class="anchor-education">
-      <div class="container mb-5">
-        <div class="row mb-4">
-          <div class="col">
-            <h3
-              class="text-center acme-regular"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Education
-            </h3>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <ul class="timeline" data-aos="fade-down" data-aos-duration="1000">
-              <li class="timeline-item mb-5 educations">
-                <h5 class="fw-bold">
-                  Vocational High School (SMK Bhakti Praja Dukuhwaru)
-                </h5>
-                <p class="text-muted mb-2 fw-bold">2020 - 2022</p>
-                <p class="text-muted">Computer Network Engineering.</p>
-              </li>
-
-              <li class="timeline-item mb-5 educations">
-                <h5 class="fw-bold">University Harkat Negeri</h5>
-                <p class="text-muted mb-2 fw-bold">2022 - Present</p>
-                <p class="text-muted">Informatics Engineering.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="anchor-experience">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col">
-            <h3
-              class="text-center acme-regular"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Experience
-            </h3>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <ul class="timeline" data-aos="fade-down" data-aos-duration="1000">
-              <li class="timeline-item mb-5 experiences">
-                <h5 class="fw-bold">Freelance Web Developer & Pentest</h5>
-                <p class="text-muted mb-2 fw-bold">2023 - Present</p>
-                <p class="text-muted w-75">
-                  Providing freelance web development services while actively
-                  learning and penetration testing web application.
-                </p>
-              </li>
-
-              <li class="timeline-item mb-5 experiences">
-                <h5 class="fw-bold">Mancing (Mahasiswa Pecinta Coding)</h5>
-                <p class="text-muted mb-2 fw-bold">2023</p>
-                <p class="text-muted w-75">
-                  Joined as an organization member of the Coding Enthusiasts
-                  Club at the campus.
-                </p>
-              </li>
-
-              <li class="timeline-item mb-5 experiences">
-                <h5 class="fw-bold">Diskominfo Tegal</h5>
-                <p class="text-muted mb-2 fw-bold">2025</p>
-                <p class="text-muted w-75">
-                  Internship at the Department of Communication and Information
-                  Technology of Tegal Regency (Diskominfo Tegal).
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="certificates" class="anchor-certificates">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col">
-            <h3
-              class="text-center acme-regular"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Certificates
-            </h3>
-          </div>
-        </div>
-
-        <div class="owl-carousel">
-          <div
-            class="item shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/certificates/certificate-1.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="certificate-1"
-            />
-          </div>
-
-          <div
-            class="item shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/certificates/certificate-2.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="certificate-2"
-            />
-          </div>
-
-          <div
-            class="item shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/certificates/certificate-3.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="certificate-3"
-            />
-          </div>
-
-          <div
-            class="item shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/certificates/certificate-4.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="certificate-4"
-            />
-          </div>
-
-          <div
-            class="item shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/certificates/certificate-5.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="certificate-5"
-            />
-          </div>
-
-          <div
-            class="item shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/certificates/certificate-6.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="certificate-6"
-            />
-          </div>
-
-          <div
-            class="item shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/certificates/certificate-7.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="certificate-7"
-            />
-          </div>
-
-          <div
-            class="item shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/certificates/certificate-8.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="certificate-8"
-            />
-          </div>
-        </div>
-
-        <div class="row">
-          <div
-            class="col d-flex justify-content-center"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <i class="bi bi-chevron-left me-5"></i>
-            <i class="bi bi-chevron-right"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#dcdcdc"
-        fill-opacity="1"
-        d="M0,32L34.3,80C68.6,128,137,224,206,229.3C274.3,235,343,149,411,106.7C480,64,549,64,617,74.7C685.7,85,754,107,823,133.3C891.4,160,960,192,1029,202.7C1097.1,213,1166,203,1234,170.7C1302.9,139,1371,85,1406,58.7L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-      ></path>
-    </svg>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#dcdcdc"
-        fill-opacity="1"
-        d="M0,64L48,85.3C96,107,192,149,288,176C384,203,480,213,576,192C672,171,768,117,864,90.7C960,64,1056,64,1152,74.7C1248,85,1344,107,1392,117.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-      ></path>
-    </svg>
-
-    <section id="services" class="mb-3">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center mb-3">
-            <h3
-              data-aos="fade-down"
-              data-aos-duration="1000"
-              class="acme-regular"
-            >
-              Services
-            </h3>
-          </div>
-        </div>
-
-        <div class="row">
-          <!-- Col 1 -->
-          <div
-            class="col-lg-6 mb-3"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-          >
-            <div class="card shadow">
-              <h5 class="card-header text-center acme-regular">
-                Web Development
-              </h5>
-              <div class="card-body">
-                <h3 class="text-center mb-3">
-                  <i class="bi bi-code-slash fs-1"></i>
-                </h3>
-
-                <p class="text-center">
-                  I build modern, scalable, and secure web applications. Focused
-                  on performance, security, and user-friendly interfaces to
-                  deliver reliable digital solutions.
-                </p>
+            <div class="hero-metrics reveal" aria-label="Portfolio highlights">
+              <div>
+                <strong>13+</strong>
+                <span>Projects</span>
+              </div>
+              <div>
+                <strong>Laravel</strong>
+                <span>Main Stack</span>
+              </div>
+              <div>
+                <strong>Security</strong>
+                <span>Web Pentest Interest</span>
               </div>
             </div>
           </div>
-
-          <!-- Col 2 -->
-          <div class="col-lg-6" data-aos="fade-down" data-aos-duration="1000">
-            <div class="card shadow">
-              <h5 class="card-header text-center acme-regular">
-                Penetration Testing
-              </h5>
-              <div class="card-body">
-                <h3 class="text-center mb-3">
-                  <i class="bi bi-bug-fill fs-1"></i>
-                </h3>
-
-                <p class="text-center">
-                  I perform web application security assessments to identify
-                  vulnerabilities such as SQL Injection, XSS, file upload, and
-                  etc. The goal is to strengthen system security before
-                  attackers can exploit it.
-                </p>
+          <div class="col-lg-5">
+            <div class="profile-panel reveal">
+              <img
+                src="assets/img/my-profile.webp"
+                alt="Portrait of Galih Anggoro Prasetya"
+                class="profile-photo"
+                width="280"
+                height="280"
+              />
+              <div class="profile-card">
+                <span class="status-dot"></span>
+                <div>
+                  <strong>Available for web development projects</strong>
+                  <p>
+                    Laravel, backend systems, API, and security-minded builds.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section id="technologies" class="anchor-skillset">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col">
-            <h3
-              class="text-center acme-regular"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Current Technologies I Working
-            </h3>
-          </div>
-        </div>
-
-        <!--  Front End -->
-        <div class="row mb-5">
-          <div class="col">
-            <h3
-              class="acme-regular mb-3"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Front End
-            </h3>
-
-            <div class="img-skillset">
-              <img
-                src="assets/img/html.webp"
-                style="width: 60px; height: 60px"
-                class="img-fluid me-3 skill"
-                alt="html"
-              />
-
-              <img
-                src="assets/img/css.webp"
-                style="width: 60px; height: 60px"
-                class="img-fluid me-3 skill"
-                alt="css"
-              />
-
-              <img
-                src="assets/img/javascript.webp"
-                style="width: 60px; height: 60px"
-                class="img-fluid me-3 skill"
-                alt="javascript"
-              />
-
-              <img
-                src="assets/img/bootstrap.webp"
-                style="width: 70px; height: 60px"
-                class="img-fluid me-3 skill"
-                alt="bootstrap"
-              />
-
-              <img
-                src="assets/img/tailwindcss.webp"
-                style="width: 70px; height: 60px"
-                class="img-fluid me-3 skill"
-                alt="tailwindcss"
-              />
-
-              <img
-                src="assets/img/jquery.webp"
-                style="width: 70px; height: 60px"
-                class="img-fluid skill mt-4"
-                alt="jquery"
-              />
-            </div>
-          </div>
-        </div>
-
-        <!--  Back End -->
-        <div class="row mb-5">
-          <div class="col">
-            <h3
-              class="acme-regular"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Back End
-            </h3>
-
-            <div class="img-skillset">
-              <img
-                src="assets/img/php.webp"
-                style="width: 80px; height: 90px"
-                class="img-fluid skill"
-                alt="php"
-              />
-
-              <img
-                src="assets/img/laravel.webp"
-                style="width: 120px; height: 80px"
-                class="img-fluid skill"
-                alt="laravel"
-              />
-
-              <img
-                src="assets/img/mysql.webp"
-                style="width: 80px; height: 80px"
-                class="img-fluid skill me-3"
-                alt="mysql"
-              />
-
-              <img
-                src="assets/img/postgresql.webp"
-                style="width: 60px; height: 60px"
-                class="img-fluid skill"
-                alt="postgresql"
-              />
-            </div>
-          </div>
-        </div>
-
-        <!--  Penetration Testing -->
-        <div class="row mb-5">
-          <div class="col">
-            <h3
-              class="acme-regular mb-3"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Penetration Testing
-            </h3>
-
-            <div class="img-skillset">
-              <img
-                src="assets/img/python.webp"
-                style="width: 60px; height: 60px"
-                class="img-fluid me-3 skill"
-                alt="python"
-              />
-
-              <img
-                src="assets/img/sqlmap.webp"
-                style="width: 60px; height: 60px"
-                class="img-fluid me-3 skill"
-                alt="sqlmap"
-              />
-
-              <img
-                src="assets/img/burp-suite.webp"
-                style="width: 60px; height: 60px"
-                class="img-fluid skill me-3"
-                alt="burp-suite"
-              />
-
-              <img
-                src="assets/img/nmap.webp"
-                style="width: 70px; height: 70px"
-                class="img-fluid me-3 skill"
-                alt="nmap"
-              />
-
-              <img
-                src="assets/img/nuclei.webp"
-                style="width: 70px; height: 70px"
-                class="img-fluid me-3 skill"
-                alt="nuclei"
-              />
-            </div>
-          </div>
-        </div>
-
-        <!--  Others -->
-        <div class="row mb-3">
-          <div class="col">
-            <h3
-              class="acme-regular mb-3"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Others
-            </h3>
-
-            <div class="img-skillset">
-              <img
-                src="assets/img/linux.webp"
-                style="width: 70px; height: 70px"
-                class="img-fluid me-1 skill"
-                alt="linux"
-              />
-
-              <img
-                src="assets/img/postman.webp"
-                style="width: 100px; height: 80px"
-                class="img-fluid me-1 skill"
-                alt="postman"
-              />
-
-              <img
-                src="assets/img/git.webp"
-                style="width: 70px; height: 70px"
-                class="img-fluid skill"
-                alt="git"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="anchor-projects">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col">
-            <h3
-              class="text-center acme-regular"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Projects
-            </h3>
-          </div>
-        </div>
-
-        <div class="owl-carousel">
-          <!-- Project 1 -->
+    <main>
+      <section id="about" class="section">
+        <div class="container">
           <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
+            class="section-heading"
+            data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <img
-              src="assets/img/project1.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project1"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                Tokoku
-                <a
-                  href="https://github.com/galihap76/tokoku"
-                  style="color: black"
-                  target="_blank"
-                  ><i class="bi bi-github float-end fs-3"></i
-                ></a>
-              </h5>
-
-              <p class="card-text">
-                Tokoku is a digital product marketplace platform that sells
-                digital products online with the Midtrans payment gateway.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">Laravel</span>
-              <span class="badge rounded-pill text-bg-dark">MySQL</span>
-              <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
-              <span class="badge rounded-pill text-bg-dark">JavaScript</span>
-            </div>
+            <span>About</span>
+            <h2>Backend-focused developer with a security mindset.</h2>
           </div>
-
-          <!-- Project 2 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project2.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project2"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                Antrian
-                <a
-                  href="https://github.com/galihap76/antrian"
-                  style="color: black"
-                  target="_blank"
-                  ><i class="bi bi-github float-end fs-3"></i
-                ></a>
-              </h5>
-
-              <p class="card-text">
-                I built this web application for you if you are looking for a
-                reference for a queue web application.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">PHP</span>
-              <span class="badge rounded-pill text-bg-dark">MySQL</span>
-              <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
-              <span class="badge rounded-pill text-bg-dark">JavaScript</span>
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
+              <div class="content-block">
+                <p>
+                  Hello, I'm Galih Anggoro Prasetya from Tegal, Indonesia. I
+                  focus on backend development and penetration testing, with
+                  Laravel as my primary backend technology.
+                </p>
+                <p>
+                  I believe a strong system is built from clean code, scalable
+                  structure, and a clear understanding of potential
+                  vulnerabilities. That is why I keep improving my backend
+                  development and web application security skills.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project3.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project3"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                Majema
-                <a
-                  href="https://github.com/galihap76/majema"
-                  style="color: black"
-                  target="_blank"
-                  ><i class="bi bi-github float-end fs-3"></i
-                ></a>
-              </h5>
-
-              <p class="card-text">
-                Majema, short for manajemen mahasiswa, is a web application
-                built with the Laravel 9 framework.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">Laravel</span>
-              <span class="badge rounded-pill text-bg-dark">MySQL</span>
-              <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
-              <span class="badge rounded-pill text-bg-dark">JavaScript</span>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project4.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project4"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                Tasek
-                <a
-                  href="https://github.com/galihap76/tasek"
-                  style="color: black"
-                  target="_blank"
-                  ><i class="bi bi-github float-end fs-3"></i
-                ></a>
-              </h5>
-
-              <p class="card-text">
-                Tasek, short for tabungan sekolah, is a web application for
-                school savings designed for elementary, middle, and high school
-                students.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">PHP</span>
-              <span class="badge rounded-pill text-bg-dark">MySQL</span>
-              <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
-              <span class="badge rounded-pill text-bg-dark">JavaScript</span>
-            </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project5.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project5"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                Portfolio Website
-
-                <a
-                  href="https://galihdev.my.id/"
-                  style="color: black"
-                  target="_blank"
+            <div class="col-lg-5">
+              <div class="highlight-grid">
+                <article
+                  class="highlight-card"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                 >
-                  <i class="bi bi-globe2 float-end fs-3"></i>
-                </a>
-
-                <a
-                  href="https://github.com/galihap76/galihap76.github.io"
-                  style="color: black"
-                  target="_blank"
+                  <i class="bi bi-layers"></i>
+                  <h3>Laravel</h3>
+                  <p>Building structured web apps, dashboards, and APIs.</p>
+                </article>
+                <article
+                  class="highlight-card"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                 >
-                  <i class="bi bi-github float-end fs-3 mx-4"></i>
-                </a>
-              </h5>
-
-              <p class="card-text">
-                My own portfolio website. This website showcases information
-                about me as well as my expertise in backend and pentest.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">HTML</span>
-              <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
-              <span class="badge rounded-pill text-bg-dark">JavaScript</span>
-            </div>
-          </div>
-
-          <!-- Project 6 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project6.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project6"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                Collector OSINT Tool
-                <a
-                  href="https://github.com/galihap76/collector"
-                  style="color: black"
-                  target="_blank"
-                  ><i class="bi bi-github float-end fs-3"></i
-                ></a>
-              </h5>
-
-              <p class="card-text">
-                Tool for retrieve information such as a person's phone number,
-                IP address, GitHub account, and Instagram account.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">Python</span>
-            </div>
-          </div>
-
-          <!-- Project 7 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project7.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project7"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                Dvwaupsploit Tool
-                <a
-                  href="https://github.com/De-Technocrats/dvwaupsploit"
-                  style="color: black"
-                  target="_blank"
-                  ><i class="bi bi-github float-end fs-3"></i
-                ></a>
-              </h5>
-
-              <p class="card-text">
-                Dvwaupsploit is a tool designed to detect and exploit web
-                applications within the DVWA environment.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">Python</span>
-            </div>
-          </div>
-
-          <!-- Project 8 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project8.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project8"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                WebNikahanku
-                <a
-                  href="https://webnikahanku.com/"
-                  style="color: black"
-                  target="_blank"
+                  <i class="bi bi-server"></i>
+                  <h3>Backend Development</h3>
+                  <p>
+                    Focused on business logic, database design, and reliability.
+                  </p>
+                </article>
+                <article
+                  class="highlight-card"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                 >
-                  <i class="bi bi-globe2 float-end fs-3"></i>
-                </a>
-              </h5>
-
-              <p class="card-text">
-                SaaS platform for digital wedding invitations with payment
-                integration (TriPay) and admin dashboard.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">Laravel</span>
-              <span class="badge rounded-pill text-bg-dark">MySQL</span>
-              <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
-              <span class="badge rounded-pill text-bg-dark">JavaScript</span>
-            </div>
-          </div>
-
-          <!-- Project 9 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project9.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project9"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                JPP Web
-                <a
-                  href="https://admin.joyoputraperkasa.com/login"
-                  style="color: black"
-                  target="_blank"
+                  <i class="bi bi-shield-check"></i>
+                  <h3>Web Security</h3>
+                  <p>
+                    Interested in vulnerability testing and safer
+                    implementation.
+                  </p>
+                </article>
+                <article
+                  class="highlight-card"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                 >
-                  <i class="bi bi-globe2 float-end fs-3"></i>
-                </a>
-              </h5>
-
-              <p class="card-text">
-                A web application for monitoring and managing driver and
-                transportation operations.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">Laravel</span>
-              <span class="badge rounded-pill text-bg-dark">MySQL</span>
-              <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
-              <span class="badge rounded-pill text-bg-dark">JavaScript</span>
-            </div>
-          </div>
-
-          <!-- Project 10 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project10.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project10"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">SIPHOAKS</h5>
-
-              <p class="card-text">
-                Web based reporting platform developed for the Tegal Regency
-                Communication and Information Office (Diskominfo).
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">Laravel</span>
-              <span class="badge rounded-pill text-bg-dark">MySQL</span>
-              <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
-              <span class="badge rounded-pill text-bg-dark">JavaScript</span>
-            </div>
-          </div>
-
-          <!-- Project 11 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project11.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project11"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                Point of Sale (POS)
-
-                <a
-                  href="https://devbundle.biz.id/login"
-                  style="color: black"
-                  target="_blank"
-                >
-                  <i class="bi bi-globe2 float-end fs-3"></i>
-                </a>
-              </h5>
-
-              <p class="card-text">
-                POS System is a web-based Point of Sale application integrated
-                with the Midtrans payment gateway.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">Laravel</span>
-              <span class="badge rounded-pill text-bg-dark">MySQL</span>
-              <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
-              <span class="badge rounded-pill text-bg-dark">JavaScript</span>
-            </div>
-          </div>
-
-          <!-- Project 12 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project12.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project12"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                My Daily API
-                <a
-                  href="https://github.com/galihap76/my-daily-api"
-                  style="color: black"
-                  target="_blank"
-                  ><i class="bi bi-github float-end fs-3"></i
-                ></a>
-              </h5>
-
-              <p class="card-text">
-                My Daily API is a personal API that I built to manage daily
-                activities in a simple yet structured way.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">Laravel</span>
-              <span class="badge rounded-pill text-bg-dark">PostgreSQL</span>
-            </div>
-          </div>
-
-          <!-- Project 13 -->
-          <div
-            class="card shadow bg-white rounded border border-secondary-subtle"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/img/project13.webp"
-              class="card-img-top border-bottom border-secondary-subtle"
-              alt="project13"
-            />
-            <div class="card-body mb-3">
-              <h5 class="card-title acme-regular">
-                DonasiKita
-
-                <a
-                  href="https://donasikita.web.id/"
-                  style="color: black"
-                  target="_blank"
-                >
-                  <i class="bi bi-globe2 float-end fs-3"></i>
-                </a>
-
-                <a
-                  href="https://github.com/galihap76/donasikita"
-                  style="color: black"
-                  target="_blank"
-                >
-                  <i class="bi bi-github float-end fs-3 mx-4"></i>
-                </a>
-              </h5>
-
-              <p class="card-text">
-                A web-based donation platform that enables people to support and
-                contribute integrated with the Mayar payment gateway.
-              </p>
-
-              <span class="badge rounded-pill text-bg-dark">Laravel</span>
-              <span class="badge rounded-pill text-bg-dark">MySQL</span>
-              <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
-              <span class="badge rounded-pill text-bg-dark">JavaScript</span>
+                  <i class="bi bi-briefcase"></i>
+                  <h3>Project Experience</h3>
+                  <p>
+                    Portfolio, client, SaaS, POS, and public source projects.
+                  </p>
+                </article>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="row">
+      <section id="services" class="section section-muted">
+        <div class="container">
           <div
-            class="col d-flex justify-content-center"
-            data-aos="zoom-in"
+            class="section-heading"
+            data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <i class="bi bi-chevron-left me-5"></i>
-            <i class="bi bi-chevron-right"></i>
+            <span>Services</span>
+            <h2>Practical solutions for web products and security review.</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+              <article class="service-card">
+                <i class="bi bi-code-slash"></i>
+                <h3>Web Development</h3>
+                <p>
+                  Modern, scalable, and secure web applications with clear
+                  structure, maintainable code, and reliable backend behavior.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+              <article class="service-card">
+                <i class="bi bi-bug"></i>
+                <h3>Penetration Testing</h3>
+                <p>
+                  Web application security assessment for issues like SQL
+                  injection, XSS, file upload risks, and common
+                  misconfigurations.
+                </p>
+              </article>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="anchor-contact mb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h3
-              class="text-center acme-regular"
-              data-aos="fade-down"
+      <section id="tech-stack" class="section">
+        <div class="container">
+          <div
+            class="section-heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <span>Tech Stack</span>
+            <h2>
+              Tools and technologies I use to build and secure web systems.
+            </h2>
+          </div>
+          <div class="tech-grid">
+            <article
+              class="tech-group"
+              data-aos="fade-up"
               data-aos-duration="1000"
             >
-              Contact
-            </h3>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div
-              class="alert alert-success alert-dismissible fade show d-none my-alert text-center"
-            >
-              Thank you, your message has been received.
-            </div>
-
-            <div class="alert alert-danger text-center d-none my-alert2">
-              There something wrong with contact form. Please contact me via
-              GitHub, Facebook, or Instagram.
-            </div>
-            <form
-              name="galihap-contact-form"
-              data-aos="fade-down"
+              <h3>Backend</h3>
+              <div class="tech-list">
+                <span><img src="assets/img/php.webp" alt="PHP" />PHP</span>
+                <span
+                  ><img
+                    src="assets/img/laravel.webp"
+                    alt="Laravel"
+                  />Laravel</span
+                >
+                <span
+                  ><img src="assets/img/mysql.webp" alt="MySQL" />MySQL</span
+                >
+                <span
+                  ><img
+                    src="assets/img/postgresql.webp"
+                    alt="PostgreSQL"
+                  />PostgreSQL</span
+                >
+              </div>
+            </article>
+            <article
+              class="tech-group"
+              data-aos="fade-up"
               data-aos-duration="1000"
             >
+              <h3>Frontend</h3>
+              <div class="tech-list">
+                <span><img src="assets/img/html.webp" alt="HTML" />HTML</span>
+                <span><img src="assets/img/css.webp" alt="CSS" />CSS</span>
+                <span
+                  ><img
+                    src="assets/img/javascript.webp"
+                    alt="JavaScript"
+                  />JavaScript</span
+                >
+                <span
+                  ><img
+                    src="assets/img/bootstrap.webp"
+                    alt="Bootstrap"
+                  />Bootstrap</span
+                >
+                <span
+                  ><img
+                    src="assets/img/tailwindcss.webp"
+                    alt="Tailwind CSS"
+                  />TailwindCSS</span
+                >
+                <span
+                  ><img src="assets/img/jquery.webp" alt="jQuery" />jQuery</span
+                >
+              </div>
+            </article>
+            <article
+              class="tech-group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <h3>Tools</h3>
+              <div class="tech-list">
+                <span><img src="assets/img/git.webp" alt="Git" />Git</span>
+                <span
+                  ><img
+                    src="assets/img/postman.webp"
+                    alt="Postman"
+                  />Postman</span
+                >
+                <span
+                  ><img src="assets/img/linux.webp" alt="Linux" />Linux</span
+                >
+              </div>
+            </article>
+            <article
+              class="tech-group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <h3>Security</h3>
+              <div class="tech-list">
+                <span
+                  ><img src="assets/img/burp-suite.webp" alt="Burp Suite" />Burp
+                  Suite</span
+                >
+                <span
+                  ><img src="assets/img/nuclei.webp" alt="Nuclei" />Nuclei</span
+                >
+                <span
+                  ><img src="assets/img/sqlmap.webp" alt="SQLMap" />SQLMap</span
+                >
+
+                <span
+                  ><img src="assets/img/python.webp" alt="Python" />Python</span
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-muted">
+        <div class="container">
+          <div
+            class="section-heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <span>Projects</span>
+            <h2>
+              Selected work across Laravel apps, products, tools, and client
+              systems.
+            </h2>
+          </div>
+          <div class="owl-carousel owl-theme project-carousel">
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project1.webp"
+                alt="Tokoku project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status public">Public Project</span>
+                </div>
+                <h3>Tokoku</h3>
+                <p>
+                  Digital product marketplace platform with Midtrans payment
+                  gateway integration.
+                </p>
+                <div class="badges">
+                  <span>Laravel</span><span>MySQL</span><span>Bootstrap</span
+                  ><span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-outline-dark"
+                    href="https://github.com/galihap76/tokoku"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project2.webp"
+                alt="Antrian project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status public">Public Project</span>
+                </div>
+                <h3>Antrian</h3>
+                <p>
+                  Queue web application reference for managing simple queue
+                  workflows.
+                </p>
+                <div class="badges">
+                  <span>PHP</span><span>MySQL</span><span>Bootstrap</span
+                  ><span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-outline-dark"
+                    href="https://github.com/galihap76/antrian"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project3.webp"
+                alt="Majema project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status public">Public Project</span>
+                </div>
+                <h3>Majema</h3>
+                <p>
+                  Student management web application built with the Laravel 9
+                  framework.
+                </p>
+                <div class="badges">
+                  <span>Laravel</span><span>MySQL</span><span>Bootstrap</span
+                  ><span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-outline-dark"
+                    href="https://github.com/galihap76/majema"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project4.webp"
+                alt="Tasek project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status public">Public Project</span>
+                </div>
+                <h3>Tasek</h3>
+                <p>
+                  School savings application designed for elementary, middle,
+                  and high school students.
+                </p>
+                <div class="badges">
+                  <span>PHP</span><span>MySQL</span><span>Bootstrap</span
+                  ><span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-outline-dark"
+                    href="https://github.com/galihap76/tasek"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project5.webp"
+                alt="Portfolio website project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status public">Public Project</span>
+                </div>
+                <h3>Portfolio Website</h3>
+                <p>
+                  Personal portfolio website showcasing profile, projects,
+                  certificates, and skills.
+                </p>
+                <div class="badges">
+                  <span>HTML</span><span>Bootstrap</span><span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-primary"
+                    href="https://galihdev.my.id/"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-box-arrow-up-right"></i> Live Demo</a
+                  >
+                  <a
+                    class="btn btn-sm btn-outline-dark"
+                    href="https://github.com/galihap76/galihap76.github.io"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project6.webp"
+                alt="Collector OSINT Tool project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status public">Public Project</span>
+                </div>
+                <h3>Collector OSINT Tool</h3>
+                <p>
+                  Tool for retrieving information such as phone number, IP
+                  address, GitHub, and Instagram account data.
+                </p>
+                <div class="badges"><span>Python</span></div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-outline-dark"
+                    href="https://github.com/galihap76/collector"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project7.webp"
+                alt="Dvwaupsploit Tool project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status public">Public Project</span>
+                </div>
+                <h3>Dvwaupsploit Tool</h3>
+                <p>
+                  Tool designed to detect and exploit web applications in a DVWA
+                  environment.
+                </p>
+                <div class="badges"><span>Python</span></div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-outline-dark"
+                    href="https://github.com/De-Technocrats/dvwaupsploit"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project8.webp"
+                alt="WebNikahanku project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status private">Private Repository</span>
+                </div>
+                <h3>WebNikahanku</h3>
+                <p>
+                  SaaS platform for digital wedding invitations with TriPay
+                  integration and admin dashboard.
+                </p>
+                <div class="badges">
+                  <span>Laravel</span><span>MySQL</span><span>Bootstrap</span
+                  ><span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-primary"
+                    href="https://webnikahanku.com/"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-box-arrow-up-right"></i> Live Demo</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project9.webp"
+                alt="JPP Web project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status private">Private Repository</span>
+                </div>
+                <h3>JPP Web</h3>
+                <p>
+                  Web application for monitoring and managing driver and
+                  transportation operations.
+                </p>
+                <div class="badges">
+                  <span>Laravel</span><span>MySQL</span><span>Bootstrap</span
+                  ><span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-primary"
+                    href="https://admin.joyoputraperkasa.com/login"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-box-arrow-up-right"></i> Live Demo</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project10.webp"
+                alt="SIPHOAKS project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status private">Private Repository</span>
+                </div>
+                <h3>SIPHOAKS</h3>
+                <p>
+                  Web-based reporting platform developed for Diskominfo
+                  Kabupaten Tegal.
+                </p>
+                <div class="badges">
+                  <span>Laravel</span><span>MySQL</span><span>Bootstrap</span
+                  ><span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-outline-dark"
+                    href="assets/img/project10.webp"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-image"></i> Preview Screenshot</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project11.webp"
+                alt="Point of Sale project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status private">Private Repository</span>
+                </div>
+                <h3>Point of Sale (POS)</h3>
+                <p>
+                  Web-based POS application integrated with the Midtrans payment
+                  gateway.
+                </p>
+                <div class="badges">
+                  <span>Laravel</span><span>MySQL</span><span>Bootstrap</span
+                  ><span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-primary"
+                    href="https://devbundle.biz.id/login"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-box-arrow-up-right"></i> Live Demo</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project12.webp"
+                alt="My Daily API project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status public">Public Project</span>
+                </div>
+                <h3>My Daily API</h3>
+                <p>
+                  Personal API built to manage daily activities in a simple yet
+                  structured way.
+                </p>
+                <div class="badges">
+                  <span>Laravel</span><span>PostgreSQL</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-outline-dark"
+                    href="https://github.com/galihap76/my-daily-api"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/img/project13.webp"
+                alt="DonasiKita project thumbnail"
+              />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="status public">Public Project</span>
+                </div>
+                <h3>DonasiKita</h3>
+                <p>
+                  Web-based donation platform integrated with the Mayar payment
+                  gateway.
+                </p>
+                <div class="badges">
+                  <span>Laravel</span><span>MySQL</span><span>Bootstrap</span
+                  ><span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm btn-primary"
+                    href="https://donasikita.web.id/"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-box-arrow-up-right"></i> Live Demo</a
+                  >
+                  <a
+                    class="btn btn-sm btn-outline-dark"
+                    href="https://github.com/galihap76/donasikita"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <div
+            class="section-heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <span>Experience</span>
+            <h2>Professional and organization experience.</h2>
+          </div>
+          <div class="timeline-list">
+            <article
+              class="timeline-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <span>2025</span>
+              <h3>Diskominfo Tegal</h3>
+              <p>
+                Internship at the Department of Communication and Information
+                Technology of Tegal Regency.
+              </p>
+            </article>
+            <article
+              class="timeline-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <span>2023</span>
+              <h3>Mancing (Mahasiswa Pecinta Coding)</h3>
+              <p>
+                Joined as an organization member of the Coding Enthusiasts Club
+                on campus.
+              </p>
+            </article>
+            <article
+              class="timeline-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <span>2023 - Present</span>
+              <h3>Freelance Web Developer & Pentest</h3>
+              <p>
+                Providing freelance web development services while learning and
+                testing web application security.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section section-muted">
+        <div class="container">
+          <div
+            class="section-heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <span>Education</span>
+            <h2>Academic background.</h2>
+          </div>
+          <div class="timeline-list two-column">
+            <article
+              class="timeline-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <span>2022 - Present</span>
+              <h3>University Harkat Negeri</h3>
+              <p>Informatics Engineering.</p>
+            </article>
+            <article
+              class="timeline-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <span>2020 - 2022</span>
+              <h3>Vocational High School (SMK Bhakti Praja Dukuhwaru)</h3>
+              <p>Computer Network Engineering.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section">
+        <div class="container">
+          <div
+            class="section-heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <span>Certificates</span>
+            <h2>Learning records and professional development.</h2>
+          </div>
+          <div class="owl-carousel owl-theme certificate-carousel">
+            <article
+              class="certificate-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/certificates/certificate-1.webp"
+                alt="Certificate 1 preview"
+              />
+              <a
+                href="assets/certificates/certificate-1.jpeg"
+                target="_blank"
+                rel="noopener"
+                >View Certificate</a
+              >
+            </article>
+            <article
+              class="certificate-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/certificates/certificate-2.webp"
+                alt="Certificate 2 preview"
+              />
+              <a
+                href="assets/certificates/certificate-2.jpeg"
+                target="_blank"
+                rel="noopener"
+                >View Certificate</a
+              >
+            </article>
+            <article
+              class="certificate-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/certificates/certificate-3.webp"
+                alt="Certificate 3 preview"
+              />
+              <a
+                href="assets/certificates/certificate-3.pdf"
+                target="_blank"
+                rel="noopener"
+                >View Certificate</a
+              >
+            </article>
+            <article
+              class="certificate-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/certificates/certificate-4.webp"
+                alt="Certificate 4 preview"
+              />
+              <a
+                href="assets/certificates/certificate-4.pdf"
+                target="_blank"
+                rel="noopener"
+                >View Certificate</a
+              >
+            </article>
+            <article
+              class="certificate-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/certificates/certificate-5.webp"
+                alt="Certificate 5 preview"
+              />
+              <a
+                href="assets/certificates/certificate-5.pdf"
+                target="_blank"
+                rel="noopener"
+                >View Certificate</a
+              >
+            </article>
+            <article
+              class="certificate-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/certificates/certificate-6.webp"
+                alt="Certificate 6 preview"
+              />
+              <a
+                href="assets/certificates/certificate-6.pdf"
+                target="_blank"
+                rel="noopener"
+                >View Certificate</a
+              >
+            </article>
+            <article
+              class="certificate-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/certificates/certificate-7.webp"
+                alt="Certificate 7 preview"
+              />
+              <a
+                href="assets/certificates/certificate-7.pdf"
+                target="_blank"
+                rel="noopener"
+                >View Certificate</a
+              >
+            </article>
+            <article
+              class="certificate-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/certificates/certificate-8.webp"
+                alt="Certificate 8 preview"
+              />
+              <a
+                href="assets/certificates/certificate-8.webp"
+                target="_blank"
+                rel="noopener"
+                >View Certificate</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div
+            class="contact-shell"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div>
+              <span class="eyebrow">Contact</span>
+              <h2>Have a Laravel, backend, or secure web project in mind?</h2>
+              <p>
+                Send a message through the form or reach me through my social
+                profiles. I am open to web development, backend, and security
+                assessment conversations.
+              </p>
+              <div class="contact-links">
+                <a
+                  href="https://github.com/galihap76"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="bi bi-github"></i> GitHub</a
+                >
+                <a
+                  href="https://www.facebook.com/galih.ap.357"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="bi bi-facebook"></i> Facebook</a
+                >
+                <a
+                  href="https://www.instagram.com/galihap.76/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="bi bi-instagram"></i> Instagram</a
+                >
+              </div>
+            </div>
+            <form name="galihap-contact-form" class="contact-form">
+              <div class="alert alert-success d-none my-alert" role="alert">
+                Thank you, your message has been received.
+              </div>
+              <div class="alert alert-danger d-none my-alert2" role="alert">
+                Something went wrong. Please contact me via GitHub, Facebook, or
+                Instagram.
+              </div>
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
                 <input
                   type="text"
                   class="form-control"
                   id="name"
-                  aria-describedby="name"
                   name="nama"
-                  autocomplete="off"
+                  autocomplete="name"
                   required
                 />
               </div>
@@ -1266,9 +1197,8 @@
                   type="email"
                   class="form-control"
                   id="email"
-                  aria-describedby="email"
                   name="email"
-                  autocomplete="off"
+                  autocomplete="email"
                   required
                 />
               </div>
@@ -1278,45 +1208,42 @@
                   class="form-control"
                   id="message"
                   name="pesan"
-                  rows="3"
+                  rows="4"
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-danger btn-kirim float-end">
-                <i class="bi bi-send-fill"></i> Send
+              <button type="submit" class="btn btn-primary btn-send">
+                <i class="bi bi-send-fill"></i>
+                Send Message
               </button>
               <button
-                class="btn btn-primary btn-loading d-none float-end"
+                class="btn btn-primary btn-loading d-none"
                 type="button"
                 disabled
               >
                 <span
                   class="spinner-border spinner-border-sm"
-                  role="status"
                   aria-hidden="true"
                 ></span>
-                Loading...
+                Sending...
               </button>
             </form>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <footer class="text-white text-center h-50">
+    <footer class="site-footer">
       <div class="container">
-        <div class="row">
-          <div class="col mt-3">
-            <p>
-              Made With <i class="bi bi-heart-fill text-danger"></i> By
-              <a
-                href="https://web.facebook.com/galih.ap.357"
-                class="text-white fw-bold"
-                >Galih Anggoro Prasetya</a
-              >
-            </p>
-          </div>
-        </div>
+        <p>
+          Made by
+          <a
+            href="https://web.facebook.com/galih.ap.357"
+            target="_blank"
+            rel="noopener"
+            >Galih Anggoro Prasetya</a
+          >
+        </p>
       </div>
     </footer>
 
@@ -1325,7 +1252,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -1337,10 +1263,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/particles.js"></script>
-    <script src="assets/vanilla-tilt.min.js"></script>
     <script src="assets/script.js"></script>
   </body>
 </html>

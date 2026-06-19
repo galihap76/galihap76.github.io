@@ -1,179 +1,158 @@
-let arrow = document.querySelector(".arrow");
-let berjalan = document.querySelector("#berjalan");
-let nav = document.querySelector(".nav");
-let arr = ["Backend Dev", "Pentester"];
-const form = document.forms["galihap-contact-form"];
-const btnKirim = document.querySelector(".btn-kirim");
-const btnLoading = document.querySelector(".btn-loading");
-const myAlert = document.querySelector(".my-alert");
-const myAlert2 = document.querySelector(".my-alert2");
-let munculDelay = 80; // Delay muncul dalam milidetik
-let hilangDelay = 100; // Delay menghilang dalam milidetik
-let currentIndex = 0;
-let karakterIndex = 0;
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbz_sB8gb_4w7mcsZ0SJSh18QXQyA0zSyf_Eei1jRSpHJwfrxlQtDhURqiTBXyPG3EFT/exec"; // Silakan ganti milik Anda sendiri.
-const img_skillset = document.querySelectorAll(".img-skillset");
-const certificates = document.querySelectorAll(".certificates");
-const educations = document.querySelectorAll(".educations");
-const experiences = document.querySelectorAll(".experiences");
+const nav = document.querySelector(".site-nav");
 const navLinks = document.querySelectorAll(".nav-link");
-const menuToggle = document.getElementById("navbarNav");
-
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load("particles-js", "assets/particles.json", function () {
-  console.log("callback - particles.js config loaded");
-});
-
-let owl_carousel = $(".owl-carousel");
-owl_carousel.owlCarousel({
-  loop: true,
-  margin: 10,
-  autoplay: true,
-  autoplayTimeout: 1500,
-  autoplayHoverPause: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-      nav: true,
-    },
-    600: {
-      items: 2,
-      nav: false,
-    },
-    1000: {
-      items: 3,
-      nav: true,
-    },
-  },
-});
-
-$(".bi-chevron-left").on("click", function () {
-  owl_carousel.trigger("prev.owl.carousel");
-});
-
-$(".bi-chevron-right").on("click", function () {
-  owl_carousel.trigger("next.owl.carousel");
-});
-
-gsap.from(".particles", { duration: 1, y: -100, opacity: 0 });
-
-VanillaTilt.init(document.querySelector(".img"), {
-  max: 30,
-  speed: 400,
-});
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    // Jika menggunakan Bootstrap 5
-    const bsCollapse = new bootstrap.Collapse(menuToggle, {
-      toggle: false,
-    });
-    bsCollapse.hide(); // Tutup navbar
-  });
-});
-
-img_skillset.forEach((img, i) => {
-  img.dataset.aos = "fade-down";
-  img.dataset.aosDelay = i * 50;
-  img.dataset.aosDuration = 1000;
-});
-
-educations.forEach((education, i) => {
-  education.dataset.aos = "fade-down";
-  education.dataset.aosDelay = i * 50;
-  education.dataset.aosDuration = 1000;
-});
-
-experiences.forEach((experience, i) => {
-  experience.dataset.aos = "fade-down";
-  experience.dataset.aosDelay = i * 50;
-  experience.dataset.aosDuration = 1000;
-});
-
-certificates.forEach((certificate, i) => {
-  certificate.dataset.aos = "fade-down";
-  certificate.dataset.aosDelay = i * 50;
-  certificate.dataset.aosDuration = 1000;
-});
+const navHome = document.querySelector("#home");
+const navbarCollapse = document.getElementById("navbarNav");
+const revealItems = document.querySelectorAll(".reveal");
+const form = document.forms["galihap-contact-form"];
+const btnSend = document.querySelector(".btn-send");
+const btnLoading = document.querySelector(".btn-loading");
+const successAlert = document.querySelector(".my-alert");
+const errorAlert = document.querySelector(".my-alert2");
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbz_sB8gb_4w7mcsZ0SJSh18QXQyA0zSyf_Eei1jRSpHJwfrxlQtDhURqiTBXyPG3EFT/exec";
 
 AOS.init({
   once: true,
 });
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+function initCarousels() {
+  if (!window.jQuery || !jQuery.fn.owlCarousel) return;
 
-  btnLoading.classList.toggle("d-none");
-  btnKirim.classList.toggle("d-none");
-  fetch(scriptURL, {
-    method: "POST",
-    body: new FormData(form),
-    mode: "no-cors",
-  })
-    .then((response) => {
-      btnLoading.classList.toggle("d-none");
-      btnKirim.classList.toggle("d-none");
+  $(".project-carousel").owlCarousel({
+    loop: true,
+    margin: 24,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    smartSpeed: 650,
+    navText: [
+      '<i class="bi bi-arrow-left" aria-hidden="true"></i>',
+      '<i class="bi bi-arrow-right" aria-hidden="true"></i>',
+    ],
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1200: { items: 3 },
+    },
+  });
 
-      myAlert.classList.toggle("d-none");
+  $(".certificate-carousel").owlCarousel({
+    loop: true,
+    margin: 24,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 4500,
+    autoplayHoverPause: true,
+    smartSpeed: 650,
+    navText: [
+      '<i class="bi bi-arrow-left" aria-hidden="true"></i>',
+      '<i class="bi bi-arrow-right" aria-hidden="true"></i>',
+    ],
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1200: { items: 4 },
+    },
+  });
+}
 
-      form.reset();
+function updateNavbarState() {
+  nav.classList.toggle("is-scrolled", window.scrollY > 12);
+}
 
-      setTimeout(function () {
-        myAlert.classList.toggle("d-none");
-      }, 3000);
-    })
-    .catch((error) => {
-      myAlert2.classList.toggle("d-none");
+function setActiveNavigation() {
+  const sections = [
+    ...document.querySelectorAll("main section[id], header[id]"),
+  ];
+  const currentSection = sections
+    .filter((section) => section.getBoundingClientRect().top <= 120)
+    .pop();
 
-      setTimeout(function () {
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-      }, 100);
+  navLinks.forEach((link) => {
+    const target = link.getAttribute("href")?.replace("#", "");
+    link.classList.toggle("active", target && currentSection?.id === target);
+  });
+}
 
-      setTimeout(function () {
-        myAlert2.classList.toggle("d-none");
-      }, 3000);
+function closeMobileMenu() {
+  if (!navbarCollapse || !navbarCollapse.classList.contains("show")) return;
+
+  const collapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse, {
+    toggle: false,
+  });
+
+  collapse.hide();
+}
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
     });
+  },
+  { threshold: 0.12 }
+);
+
+revealItems.forEach((item, index) => {
+  item.style.transitionDelay = `${Math.min(index * 35, 240)}ms`;
+  revealObserver.observe(item);
 });
 
-window.addEventListener("scroll", function () {
-  // Cek scroll
-  let scrollPosition = window.scrollY;
-
-  if (scrollPosition >= 598) {
-    nav.classList.add("show");
-  } else if (scrollPosition <= 0) {
-    nav.classList.remove("show");
-  }
+navLinks.forEach((link) => {
+  link.addEventListener("click", closeMobileMenu);
 });
 
-function teksBerjalan() {
-  if (karakterIndex < arr[currentIndex].length) {
-    berjalan.innerHTML += arr[currentIndex].charAt(karakterIndex);
-    karakterIndex++;
-    setTimeout(teksBerjalan, munculDelay);
-  } else {
-    if (arr[currentIndex] == arr[0]) {
-      setTimeout(hapusTeks, 300);
-    }
-    if (arr[currentIndex] == arr[1]) {
-      setTimeout(hapusTeks, 300);
-    }
-  }
-}
+navHome.addEventListener("click", () => {
+  closeMobileMenu();
+});
 
-function hapusTeks() {
-  if (karakterIndex >= 0) {
-    let teks = arr[currentIndex].substring(0, karakterIndex);
-    berjalan.innerHTML = teks;
-    karakterIndex--;
-    setTimeout(hapusTeks, 50);
-  } else {
-    currentIndex = (currentIndex + 1) % arr.length;
-    setTimeout(teksBerjalan, munculDelay);
-  }
-}
+window.addEventListener("scroll", () => {
+  updateNavbarState();
+  setActiveNavigation();
+});
 
-teksBerjalan();
+updateNavbarState();
+setActiveNavigation();
+initCarousels();
+
+if (form) {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    btnLoading.classList.remove("d-none");
+    btnSend.classList.add("d-none");
+    successAlert.classList.add("d-none");
+    errorAlert.classList.add("d-none");
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: new FormData(form),
+      mode: "no-cors",
+    })
+      .then(() => {
+        btnLoading.classList.add("d-none");
+        btnSend.classList.remove("d-none");
+        successAlert.classList.remove("d-none");
+        form.reset();
+
+        setTimeout(() => {
+          successAlert.classList.add("d-none");
+        }, 3500);
+      })
+      .catch(() => {
+        btnLoading.classList.add("d-none");
+        btnSend.classList.remove("d-none");
+        errorAlert.classList.remove("d-none");
+
+        setTimeout(() => {
+          errorAlert.classList.add("d-none");
+        }, 3500);
+      });
+  });
+}
