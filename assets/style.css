@@ -11,16 +11,23 @@
   --shadow: 0 18px 45px rgba(16, 24, 40, 0.09);
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 84px;
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   overflow-x: hidden;
   color: var(--ink);
@@ -32,6 +39,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -48,6 +56,8 @@ textarea:focus-visible {
 }
 
 .site-nav {
+  width: 100%;
+  max-width: 100%;
   padding: 0.85rem 0;
   background: rgba(255, 255, 255, 0.88);
   border-bottom: 1px solid rgba(217, 226, 236, 0.85);
@@ -55,6 +65,7 @@ textarea:focus-visible {
 }
 
 .navbar-brand {
+  min-width: 0;
   font-weight: 800;
   letter-spacing: 0;
   color: var(--ink);
@@ -111,6 +122,9 @@ textarea:focus-visible {
 
 .hero-section {
   position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   min-height: 100vh;
   padding: 9rem 0 5rem;
   display: flex;
@@ -520,6 +534,14 @@ textarea:focus-visible {
 .project-carousel,
 .certificate-carousel {
   position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.project-carousel .owl-stage-outer,
+.certificate-carousel .owl-stage-outer {
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .project-carousel .owl-stage,
@@ -531,6 +553,7 @@ textarea:focus-visible {
 .project-carousel .owl-item,
 .certificate-carousel .owl-item {
   display: flex;
+  min-width: 0;
 }
 
 .project-carousel .owl-item > .project-card,
@@ -761,6 +784,7 @@ textarea.form-control {
 
 @media (max-width: 991.98px) {
   .navbar-collapse {
+    max-width: 100%;
     margin-top: 0.9rem;
     padding: 0.8rem;
     background: #fff;
@@ -827,6 +851,18 @@ textarea.form-control {
       rgba(11, 18, 32, 0.98),
       rgba(10, 42, 51, 0.96)
     );
+  }
+
+  .hero-section .row {
+    --bs-gutter-x: 1.5rem;
+  }
+
+  .timeline-list:not(.two-column) {
+    padding-left: 1.25rem;
+  }
+
+  .timeline-list:not(.two-column) .timeline-card::before {
+    left: -1.4rem;
   }
 
   .profile-panel {
